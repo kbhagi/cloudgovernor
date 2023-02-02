@@ -1,0 +1,190 @@
+payload={
+  "type": "block_actions",
+  "user": {
+    "id": "xxxxx",
+    "username": "xxxxx",
+    "name": "xxxxx",
+    "team_id": "xxxxx"
+  },
+  "api_app_id": "xxxxx",
+  "token": "xxxxx",
+  "container": {
+    "type": "message",
+    "message_ts": "1626451348.00xx00",
+    "channel_id": "xxxxx",
+    "is_ephemeral": false
+  },
+  "trigger_id": "2283635207523.2227710913025.444000f5fe1224d8246dc404835e5064",
+  "team": {
+    "id": "xxxxx",
+    "domain": "securitybot-group"
+  },
+  "enterprise": null,
+  "is_enterprise_install": false,
+  "channel": {
+    "id": "xxxxx",
+    "name": "securitybot"
+  },
+  "message": {
+    "bot_id": "xxxxx",
+    "type": "message",
+    "text": "SecurityBot",
+    "user": "xxxxx",
+    "ts": "1626451348.00xx00",
+    "team": "xxxxx",
+    "edited": {
+      "user": "xxxxx",
+      "ts": "1626451349.000000"
+    },
+    "attachments": [
+      {
+        "title": "Logging+requests+using+server+access+logging+-+Amazon+Simple+Storage+Service",
+        "title_link": "https:\/\/docs.aws.amazon.com\/AmazonS3\/latest\/dev\/ServerLogs.html",
+        "text": "Enable+Amazon+S3+server+access+logging+to+track+requests+for+access+to+your+S3+buckets.",
+        "fallback": "Logging+requests+using+server+access+logging+-+Amazon+Simple+Storage+Service",
+        "from_url": "https:\/\/docs.aws.amazon.com\/AmazonS3\/latest\/dev\/ServerLogs.html",
+        "service_icon": "https:\/\/docs.aws.amazon.com\/assets\/images\/favicon.ico",
+        "service_name": "docs.aws.amazon.com",
+        "id": 1,
+        "original_url": "https:\/\/docs.aws.amazon.com\/AmazonS3\/latest\/dev\/ServerLogs.html"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "header",
+        "block_id": "wPw4Q",
+        "text": {
+          "type": "plain_text",
+          "text": "Finding",
+          "emoji": true
+        }
+      },
+      {
+        "type": "section",
+        "block_id": "yds5",
+        "fields": [
+          {
+            "type": "mrkdwn",
+            "text": "*Resource:*-+arn:aws:s3:::<http:\/\/xxxxx.xxxxxxx3.com|xxxxx.xxxxxxx3.com>",
+            "verbatim": false
+          },
+          {
+            "type": "mrkdwn",
+            "text": "*Resource+Type:*+AwsS3Bucket",
+            "verbatim": false
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "block_id": "y=j",
+        "fields": [
+          {
+            "type": "mrkdwn",
+            "text": "*Region:*+AP-SOUTH-1",
+            "verbatim": false
+          },
+          {
+            "type": "mrkdwn",
+            "text": "*Time:*+2021-06-27T17:31:02Z",
+            "verbatim": false
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "block_id": "z+e1L",
+        "fields": [
+          {
+            "type": "mrkdwn",
+            "text": "*Account:*+xxxxx",
+            "verbatim": false
+          },
+          {
+            "type": "mrkdwn",
+            "text": "*Compliance+Status:*+Failing",
+            "verbatim": false
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "block_id": "yX2fE",
+        "fields": [
+          {
+            "type": "mrkdwn",
+            "text": "*Severity:*+MEDIUM",
+            "verbatim": false
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "block_id": "DyN0",
+        "text": {
+          "type": "mrkdwn",
+          "text": "*Check:*+[S3.6]+S3+Buckets+should+have+server+access+logging+enabled",
+          "verbatim": false
+        }
+      },
+      {
+        "type": "section",
+        "block_id": "+1w",
+        "text": {
+          "type": "mrkdwn",
+          "text": "<https:\/\/docs.aws.amazon.com\/AmazonS3\/latest\/dev\/ServerLogs.html|*Recommendation:*+For+more+information+on+Bucket+Policies+and+how+to+configure+it+refer+to+the+Amazon+S3+Server+Access+Logging+section+of+the+Amazon+Simple+Storage+Service+Developer+Guide>",
+          "verbatim": false
+        }
+      },
+      {
+        "type": "actions",
+        "block_id": "T0c",
+        "elements": [
+          {
+            "type": "button",
+            "action_id": "=LdsJ",
+            "text": {
+              "type": "plain_text",
+              "text": "Remediate",
+              "emoji": true
+            },
+            "style": "primary",
+            "value": "{\"ResourceArn\":+\"arn:aws:s3:::xxxxx.xxxxxxx.com\"}"
+          },
+          {
+            "type": "button",
+            "action_id": "Z==G",
+            "text": {
+              "type": "plain_text",
+              "text": "Suppress",
+              "emoji": true
+            },
+            "style": "danger",
+            "value": "arn:aws:s3:::xxxxx.com\/s3-bucket-server-access-logging-check"
+          }
+        ]
+      }
+    ]
+  },
+  "state": {
+    "values": {
+      
+    }
+  },
+  "response_url": "https:\/\/hooks.slack.com\/actions\/xxx\/xx\/xxx",
+  "actions": [
+    {
+      "action_id": "=LdsJ",
+      "block_id": "T0c",
+      "text": {
+        "type": "plain_text",
+        "text": "Remediate",
+        "emoji": true
+      },
+      "value": "{\"ResourceArn\":+\"arn:aws:s3:::xxxxx.xxxxxxx.com\"}",
+      "style": "primary",
+      "type": "button",
+      "action_ts": "1626451355.978579"
+    }
+  ]
+}
