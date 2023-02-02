@@ -1,0 +1,19 @@
+Handling user interaction in your Slack apps
+
+https://api.slack.com/interactivity/handling
+
+https://api.slack.com/apps/A027B4Q46CR/interactive-messages?
+
+1. https://api.slack.com/messaging/interactivity
+
+2. slack.com/block-kit-builder/
+
+3. https://api.slack.com/messaging/attachments-to-blocks
+
+4. https://api.slack.com/reference/messaging/attachments#example
+
+5. https://api.slack.com/reference/surfaces/formatting
+
+6. https://api.slack.com/methods/chat.postMessage/code
+
+https://keestalkstech.com/2019/10/simple-python-code-to-send-message-to-slack-channel-without-packages/
