@@ -1,0 +1,89 @@
+{
+  'resource': '/',
+  'path': '/remediate',
+  'httpMethod': 'POST',
+  'headers': {
+    'Accept': 'application/json,*/*',
+    'Accept-Encoding': 'gzip,deflate',
+    'Content-Type': 'application/x-www-form-urlencoded',
+    'Host': 'remediate.xxxxxxx.com',
+    'User-Agent': 'Slackbot 1.0 (+https://api.slack.com/robots)',
+    'X-Amzn-Trace-Id': 'Root=1-60f1b22c-318045753356403855cea741',
+    'X-Forwarded-For': '18.205.17.192',
+    'X-Forwarded-Port': '443',
+    'X-Forwarded-Proto': 'https',
+    'X-Slack-Request-Timestamp': '1626452523',
+    'X-Slack-Signature': 'v0=e72561a88xxxxx1d56973a7a4a0e825c96685db71d173504fb1e2adc101e8'
+  },
+  'multiValueHeaders': {
+    'Accept': [
+      'application/json,*/*'
+    ],
+    'Accept-Encoding': [
+      'gzip,deflate'
+    ],
+    'Content-Type': [
+      'application/x-www-form-urlencoded'
+    ],
+    'Host': [
+      'remediate.xxxxxxx.com'
+    ],
+    'User-Agent': [
+      'Slackbot 1.0 (+https://api.slack.com/robots)'
+    ],
+    'X-Amzn-Trace-Id': [
+      'Root=1-60f1b22c-31xxxxx56403855cea741'
+    ],
+    'X-Forwarded-For': [
+      '18.205.17.192'
+    ],
+    'X-Forwarded-Port': [
+      '443'
+    ],
+    'X-Forwarded-Proto': [
+      'https'
+    ],
+    'X-Slack-Request-Timestamp': [
+      '1626452523'
+    ],
+    'X-Slack-Signature': [
+      'v0=e72561a88dd3080741d56973a7a4a0e825c96685db71d173504fb1e2adc101e8'
+    ]
+  },
+  'queryStringParameters': None,
+  'multiValueQueryStringParameters': None,
+  'pathParameters': None,
+  'stageVariables': None,
+  'requestContext': {
+    'resourceId': '5442595gm1',
+    'resourcePath': '/',
+    'httpMethod': 'POST',
+    'extendedRequestId': 'CkjHAGNGhcwFrjQ=',
+    'requestTime': '16/Jul/2021:16:22:04 +0000',
+    'path': '/remediate',
+    'accountId': 'AccId',
+    'protocol': 'HTTP/1.1',
+    'stage': 'v1',
+    'domainPrefix': 'remediate',
+    'requestTimeEpoch': 1626452524683,
+    'requestId': 'xxxxxx-39e7-4529-9836-340c8cc6c9b5',
+    'identity': {
+      'cognitoIdentityPoolId': None,
+      'accountId': None,
+      'cognitoIdentityId': None,
+      'caller': None,
+      'sourceIp': '18.205.17.192',
+      'principalOrgId': None,
+      'accessKey': None,
+      'cognitoAuthenticationType': None,
+      'cognitoAuthenticationProvider': None,
+      'userArn': None,
+      'userAgent': 'Slackbot 1.0 (+https://api.slack.com/robots)',
+      'user': None
+    },
+    'domainName': 'remediate.xxxxxxx.com',
+    'apiId': '36nlxunf26'
+  },
+  'body': 'payload=%7B%22type%22%3A%22block_actions%22%2C%22user%22%3A%7B%22id%22%3A%22U026H7LM62Y%22%2C%22username%22%3A%22bhargavak37%22%2C%22name%22%3A%22bhargavak37%22%2C%22team_id%22%3A%22T026PLWSV0R%22%7D%2C%22api_app_id%22%3A%22A027B4Q46CR%22%2C%22token%22%3A%22s9MUR1ejCz6kMLADpF3TLZBn%22%2C%22container%22%3A%7B%22type%22%3A%22message%22%2C%22message_ts%22%3A%221626452319.004400%22%2C%22channel_id%22%3A%22C026PLXA9CZ%22%2C%22is_ephemeral%22%3Afalse%7D%2C%22trigger_id%22%3A%222283514549554.2227710913025.70068887821f341dfa11b553dbe8b2f0%22%2C%22team%22%3A%7B%22id%22%3A%22T026PLWSV0R%22%2C%22domain%22%3A%22securitybot-group%22%7D%2C%22enterprise%22%3Anull%2C%22is_enterprise_install%22%3Afalse%2C%22channel%22%3A%7B%22id%22%3A%22C026PLXA9CZ%22%2C%22name%22%3A%22securitybot%22%7D%2C%22message%22%3A%7B%22bot_id%22%3A%22B026HP69PN3%22%2C%22type%22%3A%22message%22%2C%22text%22%3A%22SecurityBot%22%2C%22user%22%3A%22U026RNF8D8E%22%2C%22ts%22%3A%221626452319.004400%22%2C%22team%22%3A%22T026PLWSV0R%22%2C%22blocks%22%3A%5B%7B%22type%22%3A%22header%22%2C%22block_id%22%3A%22GDEO%22%2C%22text%22%3A%7B%22type%22%3A%22plain_text%22%2C%22text%22%3A%22Finding%22%2C%22emoji%22%3Atrue%7D%7D%2C%7B%22type%22%3A%22section%22%2C%22block_id%22%3A%22c7p7%22%2C%22fields%22%3A%5B%7B%22type%22%3A%22mrkdwn%22%2C%22text%22%3A%22%2AResource%3A%2A+arn%3Aaws%3As3%3A%3A%3A%3Chttp%3A%5C%2F%5C%2Fxxx.xxxxxxx.com%7Cxxx.xxxxxxx.com%3E%22%2C%22verbatim%22%3Afalse%7D%2C%7B%22type%22%3A%22mrkdwn%22%2C%22text%22%3A%22%2AResource+Type%3A%2A+AwsS3Bucket%22%2C%22verbatim%22%3Afalse%7D%5D%7D%2C%7B%22type%22%3A%22section%22%2C%22block_id%22%3A%22uPEp%22%2C%22fields%22%3A%5B%7B%22type%22%3A%22mrkdwn%22%2C%22text%22%3A%22%2ARegion%3A%2A+ap-south-1%22%2C%22verbatim%22%3Afalse%7D%2C%7B%22type%22%3A%22mrkdwn%22%2C%22text%22%3A%22%2ATime%3A%2A+2021-06-27T17%3A31%3A02Z%22%2C%22verbatim%22%3Afalse%7D%5D%7D%2C%7B%22type%22%3A%22section%22%2C%22block_id%22%3A%22c3eJ%22%2C%22fields%22%3A%5B%7B%22type%22%3A%22mrkdwn%22%2C%22text%22%3A%22%2AAccount%3A%2A+AccId%22%2C%22verbatim%22%3Afalse%7D%2C%7B%22type%22%3A%22mrkdwn%22%2C%22text%22%3A%22%2ACompliance+Status%3A%2A+FAILED%22%2C%22verbatim%22%3Afalse%7D%5D%7D%2C%7B%22type%22%3A%22section%22%2C%22block_id%22%3A%22oe6%22%2C%22fields%22%3A%5B%7B%22type%22%3A%22mrkdwn%22%2C%22text%22%3A%22%2ASeverity%3A%2A+MEDIUM%22%2C%22verbatim%22%3Afalse%7D%5D%7D%2C%7B%22type%22%3A%22section%22%2C%22block_id%22%3A%22vTe%22%2C%22text%22%3A%7B%22type%22%3A%22mrkdwn%22%2C%22text%22%3A%22%2ACheck%3A%2A+%5BS3.6%5D+S3+Buckets+should+have+server+access+logging+enabled%22%2C%22verbatim%22%3Afalse%7D%7D%2C%7B%22type%22%3A%22section%22%2C%22block_id%22%3A%22DFTGp%22%2C%22text%22%3A%7B%22type%22%3A%22mrkdwn%22%2C%22text%22%3A%22%3Chttps%3A%5C%2F%5C%2Fdocs.aws.amazon.com%5C%2FAmazonS3%5C%2Flatest%5C%2Fdev%5C%2FServerLogs.html%7C%2ARecommendation%3A%2A+For+more+information+on+Bucket+Policies+and+how+to+configure+it+refer+to+the+Amazon+S3+Server+Access+Logging+section+of+the+Amazon+Simple+Storage+Service+Developer+Guide%3E%22%2C%22verbatim%22%3Afalse%7D%7D%2C%7B%22type%22%3A%22actions%22%2C%22block_id%22%3A%22i56k%22%2C%22elements%22%3A%5B%7B%22type%22%3A%22button%22%2C%22action_id%22%3A%22B87A%22%2C%22text%22%3A%7B%22type%22%3A%22plain_text%22%2C%22text%22%3A%22Remediate%22%2C%22emoji%22%3Atrue%7D%2C%22style%22%3A%22primary%22%2C%22value%22%3A%22arn%3Aaws%3As3%3A%3A%3Axxx.xxxxxxx.com%5C%2Fs3-bucket-server-access-logging-check%22%7D%2C%7B%22type%22%3A%22button%22%2C%22action_id%22%3A%223DcF4%22%2C%22text%22%3A%7B%22type%22%3A%22plain_text%22%2C%22text%22%3A%22Suppress%22%2C%22emoji%22%3Atrue%7D%2C%22style%22%3A%22danger%22%2C%22value%22%3A%22arn%3Aaws%3As3%3A%3A%3Axxx.xxxxxxx.com%5C%2Fs3-bucket-server-access-logging-check%22%7D%5D%7D%5D%7D%2C%22state%22%3A%7B%22values%22%3A%7B%7D%7D%2C%22response_url%22%3A%22https%3A%5C%2F%5C%2Fhooks.slack.com%5C%2Factions%5C%2FT026PLWSV0R%5C%2F2280492642485%5C%2Fm47F0FZvkajOwKMtndj6orDq%22%2C%22actions%22%3A%5B%7B%22action_id%22%3A%223DcF4%22%2C%22block_id%22%3A%22i56k%22%2C%22text%22%3A%7B%22type%22%3A%22plain_text%22%2C%22text%22%3A%22Suppress%22%2C%22emoji%22%3Atrue%7D%2C%22value%22%3A%22arn%3Aaws%3As3%3A%3A%3Axxx.xxxxxxx.com%5C%2Fs3-bucket-server-access-logging-check%22%2C%22style%22%3A%22danger%22%2C%22type%22%3A%22button%22%2C%22action_ts%22%3A%221626452523.964111%22%7D%5D%7D',
+  'isBase64Encoded': False
+}

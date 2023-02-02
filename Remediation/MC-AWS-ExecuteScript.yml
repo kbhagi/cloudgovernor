@@ -1,0 +1,70 @@
+description: 'Generic Automation document that executes a python script using Automation SSM. An S3 pre-signed url of the python script , Arguments , Handler, AutomationAssumeRole are taken as input'
+schemaVersion: '0.3'
+assumeRole: '{{AutomationAssumeRole}}'
+parameters:
+  Arguments:
+    type: String
+    description: Input arguments coming as dict object that goes into customer script
+  AutomationAssumeRole:
+    type: String
+    description: The role ARN an Automation SSM document would assume during automation execution
+  Handler:
+    type: String
+    default: lambda_handler
+    description: python script handler
+  PreSignedUrl:
+    type: String
+    description: It contains the S3 presigned url of the script
+mainSteps:
+ - name: executeScript
+   action: 'aws:executeScript'
+   onFailure: step:PublishTask
+   onSuccess: step:PublishTask
+   timeoutSeconds: 720
+   description: handler
+   inputs:
+      Handler: script_handler
+      InputPayload:
+        Arguments: '{{ Arguments }}'
+        Handler: '{{Handler}}'
+        PreSignedUrl: '{{ PreSignedUrl }}'
+        TimeoutSeconds: 720
+      Runtime: python3.6
+      Script: |
+        def script_handler(events, context):
+            import json
+            import types
+            import urllib3
+            import traceback
+            payload = {"response": "", "context":""}
+            try:
+                mc_dynamic_module = types.ModuleType("mc_dynamic_module")
+                http = urllib3.PoolManager()
+                response = http.request('GET', events.get("PreSignedUrl"))
+                file_content = response.data
+                exec(file_content, mc_dynamic_module.__dict__)
+                arguments_str = events.get("Arguments")
+                arguments = json.loads(arguments_str)
+                handler_name = events.get("Handler")
+                handler = getattr(mc_dynamic_module, handler_name)
+                Response = handler(arguments, context)
+                payload["response"]=Response
+                payload["context"]=context
+                return payload
+            except Exception as e:
+                traceback.print_exc()
+                raise e
+   outputs:
+      - Name: payload
+        Selector: "$.payload"
+        Type: String
+ - name: PublishTask
+   action: aws:executeAwsApi
+   onFailure: Abort
+   inputs:
+      Service: sns
+      Api: Publish
+      Message: "{{executeScript.payload}}"
+      MessageType: "string"
+      TopicArn: 'arn:aws:sns:ap-south-1:471823443490:TaskStatus'
+      Subject: 'update_task'

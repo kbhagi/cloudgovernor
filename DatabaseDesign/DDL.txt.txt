@@ -1,0 +1,44 @@
+CREATE DATABASE `BotInsights` /*!40100 DEFAULT CHARACTER SET latin1 */
+
+create schema BotInsights collate latin1_swedish_ci;
+
+create table Tasks
+(
+	TaskId varchar(50) not null
+		primary key,
+	TaskStatus varchar(20) null,
+	TaskType varchar(20) not null,
+	DateTime varchar(30) null,
+	FindingId varchar(80) null
+);
+
+create table findings
+(
+	Id varchar(40) not null
+		primary key,
+	Title text not null,
+	Description text not null,
+	FindingId varchar(80) not null,
+	ResourceArn varchar(30) not null,
+	Severity varchar(20) not null,
+	WorkflowStatus varchar(20) not null,
+	Status varchar(20) not null,
+	CreatedAt varchar(50) null,
+	Source varchar(20) not null,
+	AccountNumber varchar(50) not null
+);
+
+create table remediation
+(
+	Id varchar(40) not null
+		primary key,
+	Title varchar(80) not null,
+	Description varchar(80) not null,
+	DocumentName varchar(50) not null,
+	Bucket varchar(30) not null,
+	Arguments varchar(80) not null,
+	ObjectKey varchar(30) not null,
+	AutomationAssumeRole varchar(80) not null,
+	AccountId bigint null
+);
+

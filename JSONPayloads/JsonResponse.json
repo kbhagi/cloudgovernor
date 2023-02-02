@@ -1,0 +1,16 @@
+{
+  'AutomationExecutionId': 'd6d87547-3199-4af0-8bec-240b6ec9c387',
+  'ResponseMetadata': {
+    'RequestId': 'd6d87547-3199-4af0-8bec-240b6ec9c387',
+    'HTTPStatusCode': 200,
+    'HTTPHeaders': {
+      'server': 'Server',
+      'date': 'Mon, 02 Aug 2021 15:03:18 GMT',
+      'content-type': 'application/x-amz-json-1.1',
+      'content-length': '64',
+      'connection': 'keep-alive',
+      'x-amzn-requestid': 'd6d87547-3199-4af0-8bec-240b6ec9c387'
+    },
+    'RetryAttempts': 0
+  }
+}

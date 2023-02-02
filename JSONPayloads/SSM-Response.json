@@ -1,0 +1,35 @@
+{
+  "Payload": {
+    "s3": {
+      "ResponseMetadata": {
+        "RequestId": "A6T8CAS539YRK5YV",
+        "HostId": "sfU9/ZoaEu5t7Xh2a7Muj3TL7dIC0nO1RSDWbjINWACjhT0D+izhbOQdWiuVux6FOjA8Z5u6XDQ=",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+          "x-amz-id-2": "sfU9/ZoaEu5t7Xh2a7Muj3TL7dIC0nO1RSDWbjINWACjhT0D+izhbOQdWiuVux6FOjA8Z5u6XDQ=",
+          "x-amz-request-id": "A6T8CAS539YRK5YV",
+          "date": "Mon, 02 Aug 2021 15:03:23 GMT",
+          "server": "AmazonS3",
+          "content-length": "0"
+        },
+        "RetryAttempts": 0
+      }
+    },
+    "securityhub": {
+      "ResponseMetadata": {
+        "RequestId": "0b9619c4-6561-4eeb-b1ca-c9635891bdf8",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+          "date": "Mon, 02 Aug 2021 15:03:23 GMT",
+          "content-type": "application/json",
+          "content-length": "2",
+          "connection": "keep-alive",
+          "x-amzn-requestid": "0b9619c4-6561-4eeb-b1ca-c9635891bdf8",
+          "x-amz-apigw-id": "DcZhTFXmBcwFp8w=",
+          "x-amzn-trace-id": "Root=1-6108093b-6bd3b4ab611086ec256a9069"
+        },
+        "RetryAttempts": 0
+      }
+    }
+  }
+}
